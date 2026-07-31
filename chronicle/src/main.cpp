@@ -1,9 +1,10 @@
 #include <iostream>
+#include "../include/console.hpp"
 
 using namespace std;
 
 int main(){
-    cout << "Testing for makefile";
-
+    
+    console();
     return 0;
 }
