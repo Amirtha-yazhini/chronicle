@@ -1,4 +1,4 @@
-#include "../include/input_buffer.hpp"
+#include "input_buffer.hpp"
     #include <fstream>
     #include <iostream>
     #include <chrono>   

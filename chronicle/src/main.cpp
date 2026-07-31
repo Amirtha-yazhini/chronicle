@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/console.hpp"
+#include "console.hpp"
 
 using namespace std;
 
