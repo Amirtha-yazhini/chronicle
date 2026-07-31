@@ -62,9 +62,10 @@ ExecResult execute(const Command& cmd, WorldState& world) {
         } else {
             std::cout << "--- Active Players ---\n";
             for (const auto& p : players) {
-                std::cout << "ID: " << p.id 
-                          << " | User: " << p.username 
-                          << " | Email: " << p.email << "\n";
+               // Updated format: [id] username email
+                    std::cout << "[" << p.id << "] " 
+                         << p.username << " " 
+                        << p.email << "\n";
             }
         }
         return {true, "Listed " + std::to_string(players.size()) + " player(s)."};
