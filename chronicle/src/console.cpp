@@ -1,14 +1,19 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include "../include/console.hpp"
+#include "../include/input_buffer.hpp"
 
 using namespace std;
 
 void console(){
     string in;
+     vector<string> history;
     while(1){
         cout<<"ironclad>\t";
         cin>>in;
+       
+        history.push_back(in);
         if(in == ".help"){
             cout <<".quit Shut down the world engine \n .help       Show this message \n .version    Show engine version \n .status     Show world status\n";
 
@@ -29,5 +34,6 @@ void console(){
             cout << "World command queued: \n";
         }
     }
-   
+    InputBuffer buffer;
+    buffer.processAndLog(history, "ironclad.log");
 }
