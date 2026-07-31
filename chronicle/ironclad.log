@@ -1,2 +1,20 @@
 .version
 .quit
+
+--- Session Run: [2026-07-31 22:49:14] ---
+.help
+.version
+SPAWN PLAYER 1 alice alice@ironhold.gg
+SPAWN PLAYER 2 bob bob@ironhold.gg
+LIST PLAYERS
+SPAWN PLAYER -1 bad email
+SPAWN PLAYER 3 areallylongnamethatexceedsthirtytwochars x@x.com
+SPAWN PLAYER -3 areallylongnamethatexceedsthirtytwochars x@x.com
+SPAWN PLAYER 2 bob bob@ironhold.gg
+SPAWN PLAYER -2 bob bob@ironhold.gg
+.quit
+
+--- Session Run: [2026-07-31 22:51:41] ---
+.help
+SPAWN PLAYER -3 thirtytwochars x@x.com
+.quit
