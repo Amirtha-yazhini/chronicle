@@ -67,10 +67,11 @@ public:
 uint32_t getNumEntities() {
     return getPlayers().size();
 }    
-    uint32_t getPageCount() const {
-        if (num_entities == 0) return 0;
-        return static_cast<uint32_t>(std::ceil(static_cast<double>(num_entities) / ENTITIES_PER_PAGE));
-    }
+    uint32_t getPageCount() {
+    uint32_t active_count = getNumEntities(); // Returns 2
+    if (active_count == 0) return 0;
+    return static_cast<uint32_t>(std::ceil(static_cast<double>(active_count) / ENTITIES_PER_PAGE));
+}
 
     const std::string& getFilename() const { return pager.get_filename(); }
 
