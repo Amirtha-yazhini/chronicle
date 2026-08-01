@@ -1,10 +1,6 @@
-#include <iostream>
 #include "console.hpp"
 
-using namespace std;
-
-int main(){
-    
-    console();
+int main(int argc, char* argv[]) {
+    console(argc, argv);
     return 0;
 }

@@ -1,10 +1,7 @@
-#ifndef console_hpp
-#define console_hpp
 
-void console();
+#ifndef CONSOLE_HPP
+#define CONSOLE_HPP
 
+void console(int argc, char* argv[]);
 
-
-
-
-#endif
+#endif // CONSOLE_HPP
